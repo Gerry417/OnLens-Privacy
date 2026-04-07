@@ -122,75 +122,79 @@
         </div>
 
         <section id="it">
-            <h1>🛡️ Privacy Policy: OnLens</h1>
-            
-            <h2>1. Natura del Servizio e Raccolta Dati</h2>
-            <p>La presente Privacy Policy si applica all'applicazione <strong>OnLens</strong> (di seguito "Applicazione") creata da Gerardo D'Amico ("Fornitore del Servizio"). Il servizio è fornito "COSÌ COM'È".</p>
-            <p>OnLens è un'applicazione "Offline-First". Ciò significa che l'Applicazione è progettata per funzionare senza la necessità di trasmettere dati personali a server esterni.</p>
+            <h1>🇮🇹 Informativa sulla Privacy (Italiano)</h1>
+            <p class="date"><strong>Ultimo aggiornamento: 7 Aprile 2026</strong></p>
+            <p>La presente Informativa sulla Privacy si applica all'applicazione <strong>OnLens</strong> (di seguito "Applicazione") creata da Gerardo D'Amico ("Fornitore del Servizio"). Il servizio è fornito come servizio gratuito "COSÌ COM'È".</p>
 
-            <h2>2. Informazioni Raccolte e Utilizzo (Edge Storage)</h2>
-            <p>A differenza del template standard, l'Applicazione <strong>NON</strong> raccoglie né trasmette a server remoti:</p>
+            <h2>1. Architettura Offline-First e Privacy by Design</h2>
+            <p>OnLens è progettata come un'applicazione <strong>offline-first</strong>. Tutti i dati inseriti dall'utente — come la gradazione delle lenti (PWR), le marche, le quantità e la cronologia delle sostituzioni — sono memorizzati <strong>esclusivamente nella memoria locale del dispositivo</strong> (tramite database SQLite/IndexedDB gestito dal framework Capacitor). Il Fornitore del Servizio non ha alcun accesso ai tuoi dati e nessuna informazione personale viene mai trasmessa a server esterni.</p>
+
+            <h2>2. Raccolta e Utilizzo delle Informazioni</h2>
+            <p>Poiché l'Applicazione opera localmente:</p>
             <ul>
-                <li>Indirizzi IP o dati di navigazione.</li>
-                <li>Informazioni sull'identità dell'utente (nomi, email, numeri di telefono).</li>
-                <li>Posizione geografica.</li>
+                <li><strong>NON</strong> raccogliamo nomi, indirizzi email o numeri di telefono.</li>
+                <li><strong>NON</strong> raccogliamo indirizzi IP o identificativi univoci del dispositivo per il tracciamento.</li>
+                <li><strong>NON</strong> utilizziamo cookie o sistemi di analisi (analytics) di terze parti.</li>
+                <li><strong>NON</strong> raccogliamo dati sulla posizione geografica del dispositivo.</li>
             </ul>
-            <p>Tutti i dati inseriti dall'utente (es. gradazione PWR, marche di lenti, scadenze e cronologia) sono salvati <strong>esclusivamente nella memoria locale del dispositivo</strong> (tramite database SQLite/IndexedDB gestito da Capacitor). Il Fornitore del Servizio non ha alcun accesso a questi dati.</p>
 
-            <h2>3. Utilizzo dell'Intelligenza Artificiale (AI)</h2>
-            <p>L'Applicazione non utilizza tecnologie di Intelligenza Artificiale (AI) per elaborare i dati dell'utente o fornire funzionalità all'interno del software. L'IA è stata utilizzata esclusivamente come supporto durante la fase di sviluppo del codice sorgente.</p>
+            <h2>3. Permessi Android e Finalità</h2>
+            <p>Per fornire le sue funzionalità principali, l'Applicazione richiede i seguenti permessi:</p>
+            <ul>
+                <li><strong>Internet:</strong> Richiesto dal framework Capacitor per caricare l'interfaccia web locale e per permettere l'apertura di link esterni (come la presente informativa). Nessun dato dell'utente viene caricato online.</li>
+                <li><strong>Notifiche e Allarmi Esatti (Exact Alarms):</strong> Richiesti per inviare promemoria relativi alla sostituzione delle lenti. Queste notifiche sono generate localmente sul dispositivo; il Fornitore del Servizio non può visualizzare, né modificare i tuoi promemoria.</li>
+            </ul>
 
-            <h2>4. Accesso di Terze Parti</h2>
-            <p>Poiché i dati risiedono solo sul dispositivo, nessun dato personale viene trasmesso a terzi.</p>
-            <p>L'unico accesso alla rete (permesso <code>INTERNET</code>) è richiesto per il corretto funzionamento del framework tecnico (Capacitor) e per l'eventuale apertura di link esterni (es. questa Privacy Policy), ma non viene utilizzato per scopi di tracciamento o profilazione.</p>
+            <h2>4. Utilizzo dell'Intelligenza Artificiale (AI)</h2>
+            <p>L'Applicazione <strong>non utilizza</strong> tecnologie di Intelligenza Artificiale (AI) per elaborare i dati dell'utente o fornire funzionalità all'interno del software. L'IA è stata utilizzata esclusivamente come strumento di supporto durante la fase di sviluppo del codice sorgente.</p>
 
             <h2>5. Conservazione e Cancellazione dei Dati</h2>
-            <p>Il controllo totale dei dati appartiene all'utente.</p>
-            <ul>
-                <li><strong>Cancellazione:</strong> Per eliminare tutti i dati, l'utente può semplicemente disinstallare l'Applicazione o cancellare la cache/dati dalle impostazioni di Android.</li>
-                <li><strong>Recupero:</strong> Poiché il Fornitore del Servizio non possiede i dati, in caso di smarrimento del dispositivo o disinstallazione, i dati non potranno essere recuperati dal Fornitore.</li>
-            </ul>
+            <p>L'utente ha il controllo totale dei propri dati. Tutte le informazioni vengono eliminate se l'utente disinstalla l'Applicazione o cancella i dati dell'Applicazione nelle impostazioni di Android. Poiché il Fornitore del Servizio non possiede i dati, non è in grado di recuperarli in caso di smarrimento del dispositivo o disinstallazione.</p>
 
-            <h2>6. Disclaimer Medico (Fondamentale per OnLens)</h2>
-            <p>OnLens è uno strumento di gestione logistica e promemoria. I dati inseriti sono responsabilità dell'utente. L'Applicazione non fornisce consulenze mediche e non sostituisce in alcun modo il parere di un oculista o di un professionista della visione.</p>
+            <h2>6. Disclaimer Medico</h2>
+            <p>OnLens è uno strumento logistico e un assistente per i promemoria. <strong>Non è un dispositivo medico</strong> e non fornisce consigli medici. L'Applicazione non sostituisce in alcun modo il parere di un oculista o di un professionista della visione. Segui sempre le istruzioni del tuo specialista.</p>
+
+            <h2>7. Contatti</h2>
+            <p>Per qualsiasi domanda riguardante la privacy, è possibile contattare il Fornitore del Servizio all'indirizzo: <strong><a href="mailto:gerardo.damico07@gmail.com">gerardo.damico07@gmail.com</a></strong></p>
         </section>
 
         <hr>
 
         <section id="en">
-            <h1>Privacy Policy for OnLens</h1>
-            <p class="date">Last Updated: April 7, 2026</p>
-            <p>This Privacy Policy describes how <strong>OnLens</strong> (the "Application"), developed by Gerardo D'Amico ("Service Provider"), handles your information. The Application is a "Free" service provided "AS IS".</p>
+            <h1>🇺🇸 Privacy Policy (English)</h1>
+            <p class="date"><strong>Last Updated: April 7, 2026</strong></p>
+            <p>This Privacy Policy applies to the <strong>OnLens</strong> application (hereby referred to as "Application") created by Gerardo D'Amico (hereby referred to as "Service Provider"). This service is provided as a Free service "AS IS".</p>
 
-            <h2>1. Offline-First & Privacy by Design</h2>
-            <p>OnLens is designed as an <strong>offline-first</strong> application. All data you enter—such as contact lens power (PWR), brands, quantities, and replacement history—is stored <strong>exclusively on your device's local memory</strong> (using SQLite/IndexedDB). The Service Provider has no access to your data, and no personal information is ever transmitted to external servers.</p>
+            <h2>1. Offline-First Architecture & Privacy by Design</h2>
+            <p>OnLens is designed as an <strong>offline-first</strong> application. All data entered by the user — such as contact lens power (PWR), brands, quantities, and replacement history — is stored <strong>exclusively on your device's local memory</strong> (using SQLite/IndexedDB managed via the Capacitor framework). The Service Provider has no access to your data, and no personal information is ever transmitted to external servers.</p>
 
             <h2>2. Information Collection and Use</h2>
-            <p>Because the Application runs locally:</p>
+            <p>Because the Application operates locally:</p>
             <ul>
-                <li>We do <strong>not</strong> collect your name, email, or phone number.</li>
-                <li>We do <strong>not</strong> collect your IP address or unique device identifiers for tracking.</li>
-                <li>We do <strong>not</strong> use cookies or third-party analytics.</li>
+                <li>We do <strong>NOT</strong> collect names, email addresses, or phone numbers.</li>
+                <li>We do <strong>NOT</strong> collect IP addresses or unique device identifiers for tracking purposes.</li>
+                <li>We do <strong>NOT</strong> use cookies or third-party analytics.</li>
+                <li>We do <strong>NOT</strong> collect precise geographical location data.</li>
             </ul>
 
-            <h2>3. Android Permissions & Why We Need Them</h2>
+            <h2>3. Android Permissions & Purpose</h2>
             <p>To provide its core features, the Application requires the following permissions:</p>
             <ul>
-                <li><strong>Internet:</strong> Required by the Capacitor framework to render the local web interface and open external links (like this policy). No user data is uploaded.</li>
-                <li><strong>Post Notifications & Exact Alarms:</strong> Required to send you reminders for lens replacements. These notifications are generated locally on your device; the Service Provider cannot see or modify your reminders.</li>
+                <li><strong>Internet:</strong> Required by the Capacitor framework to render the local web interface and to open external links (such as this policy). No user data is uploaded online.</li>
+                <li><strong>Post Notifications & Exact Alarms:</strong> Required to send you reminders for lens replacements. These notifications are generated locally on your device; the Service Provider cannot view or modify your reminders.</li>
             </ul>
 
-            <h2>4. No Artificial Intelligence (AI)</h2>
-            <p>The Application does <strong>not</strong> use AI technologies to process user data. AI was used solely as a development tool to assist in writing the source code.</p>
+            <h2>4. No Artificial Intelligence (AI) Usage</h2>
+            <p>The Application does <strong>NOT</strong> use Artificial Intelligence (AI) technologies to process user data or provide in-app features. AI was used solely as a development tool to assist in writing the source code.</p>
 
             <h2>5. Data Retention and Deletion</h2>
-            <p>You have full control over your data. All information is deleted if you uninstall the Application or clear the Application data in your Android settings. Since we do not hold your data, we cannot recover it for you if it is lost.</p>
+            <p>You have full control over your data. All information is deleted if you uninstall the Application or clear the Application data in your Android settings. Since the Service Provider does not hold your data, we cannot recover it for you if it is lost or the app is uninstalled.</p>
 
             <h2>6. Medical Disclaimer</h2>
-            <p>OnLens is a logistical tool and reminder assistant. It is <strong>not a medical device</strong> and does not provide medical advice. Always follow the instructions of your eye care professional.</p>
+            <p>OnLens is a logistical tool and reminder assistant. It is <strong>NOT a medical device</strong> and does not provide medical advice. The Application is not a substitute for professional eye care or medical consultation. Always follow the instructions of your eye care professional.</p>
 
             <h2>7. Contact Us</h2>
-            <p>For any questions, contact: <a href="mailto:gerardo.damico07@gmail.com">gerardo.damico07@gmail.com</a></p>
+            <p>For any questions regarding privacy, you may contact the Service Provider via email at: <strong><a href="mailto:gerardo.damico07@gmail.com">gerardo.damico07@gmail.com</a></strong></p>
         </section>
 
     </div>
