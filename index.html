@@ -4,49 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Privacy Policy e Note Legali di OnLens. App offline-first per la gestione lenti. I tuoi dati restano sul tuo dispositivo. Sviluppata da Gerardo D'Amico.">
-    <title>OnLens - Privacy Policy</title>
+    <title>Privacy Policy - OnLens</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f9f9f9; }
-        .container { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        h1 { color: #007aff; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { color: #333; margin-top: 30px; }
-        .lang-switch { background: #eee; padding: 10px; border-radius: 6px; font-size: 0.9em; margin-bottom: 20px; }
-        hr { border: 0; border-top: 1px solid #eee; margin: 40px 0; }
+        /* Variabili per supporto automatico Tema Chiaro / Tema Scuro */
+        :root {
+            --bg-body: #f4f7f6;
+            --bg-container: #ffffff;
+            --text-main: #333333;
+            --text-muted: #666666;
+            --accent: #0056b3;
+            --border: #eeeeee;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-body: #121212;
+                --bg-container: #1e1e1e;
+                --text-main: #e0e0e0;
+                --text-muted: #a0a0a0;
+                --accent: #66b2ff;
+                --border: #333333;
+            }
+        }
+
+        /* Reset e Stili di Base */
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--bg-container);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Tipografia */
+        h1 {
+            color: var(--accent);
+            font-size: 2rem;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        ul {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: var(--border);
+            margin: 50px 0;
+        }
+
+        /* Navigazione */
+        .lang-nav {
+            background-color: var(--border);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .lang-nav a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .lang-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .date {
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <div class="lang-switch">Scroll down for English version</div>
+        <div class="lang-nav">
+            <span>Lingua / Language:</span>
+            <div>
+                <a href="#it">Italiano</a> | <a href="#en">English</a>
+            </div>
+        </div>
 
-        <h1>Informativa sulla Privacy - OnLens</h1>
-        <p><strong>Ultimo aggiornamento: 7 Aprile 2026</strong></p>
-        <p>OnLens è un'applicazione "offline-first" creata da Gerardo D'Amico. Il servizio è fornito "COSÌ COM'È".</p>
-        
-        <h2>1. Privacy by Design</h2>
-        <p>OnLens è progettata per funzionare senza trasmettere dati a server esterni. Tutti i dati (gradazione PWR, marche, scadenze) sono salvati esclusivamente nella memoria locale del tuo dispositivo. Lo sviluppatore non ha accesso ai tuoi dati.</p>
+        <section id="it">
+            <h1>🛡️ Privacy Policy: OnLens</h1>
+            
+            <h2>1. Natura del Servizio e Raccolta Dati</h2>
+            <p>La presente Privacy Policy si applica all'applicazione <strong>OnLens</strong> (di seguito "Applicazione") creata da Gerardo D'Amico ("Fornitore del Servizio"). Il servizio è fornito "COSÌ COM'È".</p>
+            <p>OnLens è un'applicazione "Offline-First". Ciò significa che l'Applicazione è progettata per funzionare senza la necessità di trasmettere dati personali a server esterni.</p>
 
-        <h2>2. Permessi Android</h2>
-        <p>L'app richiede l'accesso a Internet solo per il funzionamento tecnico del framework Capacitor e le notifiche locali per i promemoria di sostituzione delle lenti. Nessun dato viene caricato online.</p>
+            <h2>2. Informazioni Raccolte e Utilizzo (Edge Storage)</h2>
+            <p>A differenza del template standard, l'Applicazione <strong>NON</strong> raccoglie né trasmette a server remoti:</p>
+            <ul>
+                <li>Indirizzi IP o dati di navigazione.</li>
+                <li>Informazioni sull'identità dell'utente (nomi, email, numeri di telefono).</li>
+                <li>Posizione geografica.</li>
+            </ul>
+            <p>Tutti i dati inseriti dall'utente (es. gradazione PWR, marche di lenti, scadenze e cronologia) sono salvati <strong>esclusivamente nella memoria locale del dispositivo</strong> (tramite database SQLite/IndexedDB gestito da Capacitor). Il Fornitore del Servizio non ha alcun accesso a questi dati.</p>
 
-        <h2>3. Disclaimer Medico</h2>
-        <p>OnLens è uno strumento logistico. Non fornisce consigli medici e non sostituisce il parere di un professionista.</p>
+            <h2>3. Utilizzo dell'Intelligenza Artificiale (AI)</h2>
+            <p>L'Applicazione non utilizza tecnologie di Intelligenza Artificiale (AI) per elaborare i dati dell'utente o fornire funzionalità all'interno del software. L'IA è stata utilizzata esclusivamente come supporto durante la fase di sviluppo del codice sorgente.</p>
+
+            <h2>4. Accesso di Terze Parti</h2>
+            <p>Poiché i dati risiedono solo sul dispositivo, nessun dato personale viene trasmesso a terzi.</p>
+            <p>L'unico accesso alla rete (permesso <code>INTERNET</code>) è richiesto per il corretto funzionamento del framework tecnico (Capacitor) e per l'eventuale apertura di link esterni (es. questa Privacy Policy), ma non viene utilizzato per scopi di tracciamento o profilazione.</p>
+
+            <h2>5. Conservazione e Cancellazione dei Dati</h2>
+            <p>Il controllo totale dei dati appartiene all'utente.</p>
+            <ul>
+                <li><strong>Cancellazione:</strong> Per eliminare tutti i dati, l'utente può semplicemente disinstallare l'Applicazione o cancellare la cache/dati dalle impostazioni di Android.</li>
+                <li><strong>Recupero:</strong> Poiché il Fornitore del Servizio non possiede i dati, in caso di smarrimento del dispositivo o disinstallazione, i dati non potranno essere recuperati dal Fornitore.</li>
+            </ul>
+
+            <h2>6. Disclaimer Medico (Fondamentale per OnLens)</h2>
+            <p>OnLens è uno strumento di gestione logistica e promemoria. I dati inseriti sono responsabilità dell'utente. L'Applicazione non fornisce consulenze mediche e non sostituisce in alcun modo il parere di un oculista o di un professionista della visione.</p>
+        </section>
 
         <hr>
 
-        <h1>Privacy Policy - OnLens (English)</h1>
-        <p><strong>Last Updated: April 7, 2026</strong></p>
-        
-        <h2>1. Offline-First Architecture</h2>
-        <p>OnLens is an offline-first application. All data you enter (PWR power, brands, quantities, and replacement history) is stored <strong>exclusively on your device's local memory</strong>. The Service Provider has no access to your data.</p>
-        
-        <h2>2. Android Permissions</h2>
-        <p>The Application requires Internet access for technical framework purposes and Local Notifications for lens replacement reminders. No user data is ever transmitted to external servers.</p>
+        <section id="en">
+            <h1>Privacy Policy for OnLens</h1>
+            <p class="date">Last Updated: April 7, 2026</p>
+            <p>This Privacy Policy describes how <strong>OnLens</strong> (the "Application"), developed by Gerardo D'Amico ("Service Provider"), handles your information. The Application is a "Free" service provided "AS IS".</p>
 
-        <h2>3. No AI Usage</h2>
-        <p>The Application does not use AI technologies to process user data. AI was used solely as a development tool to assist in writing the source code.</p>
+            <h2>1. Offline-First & Privacy by Design</h2>
+            <p>OnLens is designed as an <strong>offline-first</strong> application. All data you enter—such as contact lens power (PWR), brands, quantities, and replacement history—is stored <strong>exclusively on your device's local memory</strong> (using SQLite/IndexedDB). The Service Provider has no access to your data, and no personal information is ever transmitted to external servers.</p>
 
-        <h2>4. Contact Us</h2>
-        <p>gerardo.damico07@gmail.com</p>
+            <h2>2. Information Collection and Use</h2>
+            <p>Because the Application runs locally:</p>
+            <ul>
+                <li>We do <strong>not</strong> collect your name, email, or phone number.</li>
+                <li>We do <strong>not</strong> collect your IP address or unique device identifiers for tracking.</li>
+                <li>We do <strong>not</strong> use cookies or third-party analytics.</li>
+            </ul>
+
+            <h2>3. Android Permissions & Why We Need Them</h2>
+            <p>To provide its core features, the Application requires the following permissions:</p>
+            <ul>
+                <li><strong>Internet:</strong> Required by the Capacitor framework to render the local web interface and open external links (like this policy). No user data is uploaded.</li>
+                <li><strong>Post Notifications & Exact Alarms:</strong> Required to send you reminders for lens replacements. These notifications are generated locally on your device; the Service Provider cannot see or modify your reminders.</li>
+            </ul>
+
+            <h2>4. No Artificial Intelligence (AI)</h2>
+            <p>The Application does <strong>not</strong> use AI technologies to process user data. AI was used solely as a development tool to assist in writing the source code.</p>
+
+            <h2>5. Data Retention and Deletion</h2>
+            <p>You have full control over your data. All information is deleted if you uninstall the Application or clear the Application data in your Android settings. Since we do not hold your data, we cannot recover it for you if it is lost.</p>
+
+            <h2>6. Medical Disclaimer</h2>
+            <p>OnLens is a logistical tool and reminder assistant. It is <strong>not a medical device</strong> and does not provide medical advice. Always follow the instructions of your eye care professional.</p>
+
+            <h2>7. Contact Us</h2>
+            <p>For any questions, contact: <a href="mailto:gerardo.damico07@gmail.com">gerardo.damico07@gmail.com</a></p>
+        </section>
+
     </div>
+
 </body>
 </html>
